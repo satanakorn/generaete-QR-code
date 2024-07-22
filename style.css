@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.card h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.card input {
+    padding: 10px;
+    width: calc(100% - 20px);
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    outline: 0;
+    transition: border-color 0.3s;
+}
+
+.card input:focus {
+    border-color: #00f2fe;
+}
+
+.card button {
+    padding: 10px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    background-color: #4facfe;
+    border-radius: 10px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #00f2fe;
+}
+
+.imgbox {
+    max-height: 0;
+    overflow: hidden;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    transition: max-height 0.3s ease-in-out;
+}
+
+#img {
+    width: 150px;
+    height: 150px;
+}
+
+.show {
+    max-height: 150px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .card h1 {
+        font-size: 20px;
+    }
+
+    .card input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .card button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
